@@ -1,0 +1,97 @@
+7-17-2024 JS ouput 
+
+REVIEW
+
+Binary code: ones and zeros: computer language
+Code: Source code: This is a code written usign a programming language
+
+Execute: executor: execution: Run
+Compile: compiler: compilation: Check if there is any syntax error in the code
+JavaScript vs other languages
+
+
+ASCII table:
+
+
+Automation tools that are in demand: Cypress & Playwright
+Selenium demand is decreasing
+
+50-60 percent of the jobs -> Selenium
+
+Cypress -> 10-15 percent
+Playwright -> 10-15 percent
+
+10 percent: The other tools
+
+END REVIEW
+
+Statement: Any line of code that is written with a programming language
+
+Some statement examples
+console.log('Hello'); // This is JS or TS statement
+System.out.println("Hello"); // This is Java statement
+Console.WriteLine("Hello"); // This is C# statement
+
+COMMENTS: are used for short descriptions.
+
+// used for single line COMMENTS
+
+/*
+    Multi-line comments
+
+*/
+
+
+VARIABLES:
+-it is a special container that stores a value
+-you can change the initial value ?
+
+
+var-let-const
+
+Before 2015 (ES6)
+-There was only var keyword used for variables
+-You can reassign values to var variables
+
+After 2015 (ES6)
+-JS introduced 2 new keywords: let and const to be used instead of var keyword
+- let can be re-assigned with a new value
+-const is used for constants and cannont be re-assigned 
+
+-let can be declared and assigned to value later
+-let is going to be undefined if it is declared but not assigned with any value
+-consnt cannot be declared without a value and MUST always be initialized with initial value
+
+
+Data Types:
+string: is a text data type which can be stored in varaiables using single or double quotes
+number: is number data which can be stored in variables without quotes
+
+concatenation: combining multiple strings together using + operator
+
+nubmer + numer : arithmetic operation
+string + string : concatenation
+string + number : 
+
+'5' + 3 = '53' 
+'5' + 3 + 2 = '532'
+'5' + (3 + 2) = '55'
+2 + 1 + '0' = '30' 
+
+
+'Hello' + 'World' = 'HelloWorld'
+
+
+
+Variable Naming: How should we name our variables?
+- No spaces
+- 
+
+Convention: it is not a written rule but followed by all the coders/programmers
+
+
+
+
+
+
+

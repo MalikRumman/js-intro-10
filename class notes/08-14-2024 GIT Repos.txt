@@ -1,0 +1,45 @@
+
+
+
+08-14-2024 GIT Repos
+
+RECAP:
+
+GIT: Global Information Tracker 
+    We use git to push our codes to remote repos and collaborate with other team mebers or developers/QAs/programmer
+
+GIT is a VCS (Version Control System)
+GIT is a distributed version control System
+
+Centralized VCS: We do not prefer this if a server is down or there is not network, we can't push our changes 
+Distributed VSC: We have a local copy of the server repo and can keep working even though there is issues with server or network
+
+GitHub / GitLab / Bitbucker / Azure DevOps: All hosting tools/apps where we can store out remote repos 
+
+SSH: Special type of authentication used instead of username and password
+It is more secure and uses private-public key pairs
+Public is shared with hosting apps while private is in local
+Private keys is in your local 
+
+ssh-keygen simpliest ssh set up
+
+
+
+HOW TO LINK AND PUSH A NEW PROJECT FROM YOUR LOCAL TO REMOTE
+1. create a local repo (on your machine)
+2. create a remote repo (on GitHub, GitLab, BitBucket)
+3. Initialize the local repo with GIT
+    git init 
+4. link local repo with remote using SSH commands 
+    git remote add origin <URL>
+5. Make some changes
+6. check the status
+    git status
+7. Track the changes - Stage them 
+    git add fileName 
+    got add .
+8. commit the changes with a meaningful message 
+9. Push the changes to remote repo 
+    git push --set-upstream origin master
+    git push -u origin master
+    git push 

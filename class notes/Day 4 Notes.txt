@@ -1,0 +1,114 @@
+RULES:
+- You cannot start varable with a digit
+- No spelcail characters allowed except _, $, and other currencies
+- cannot use space
+- cannot use variable name in same file while they have the same scope
+- canot be using reserved keywords
+
+
+COVENTION:
+- Variable names should be meaningful
+- camelCase rule is  followed for variables which may have a few words in it Ex: numberOfStudentsInBatch10
+- variable names should usually (99%) starts with lowercase letters
+- We do not prefer too long variable names
+  SSN,ZIP,DOB etc
+
+
+DATA TYPES:
+
+Primitive Types: basic types that usually stores a piece of information
+7 primitives:
+String: text
+Number: number
+BigInt: large number
+Boolean: true or false
+undefined:
+null:
+symbol:
+
+Reference Types: complex types which can store more information
+arrays, objects, maps, sets, math
+
+1. String: a sequence of characters (zero, one or multiple characters)
+  We store strings insingle or double quotes
+  let name = 'John';
+  let city = "Chicago";
+
+  ''      -> empty string
+  ' '     -> string
+  '123'   -> string
+  'undefined' -> string
+  'null' -> string
+
+
+2. Number: is used to store all absolute and decimal numbers (8 bytes)
+Whole numbers - absolute numbers: 1, 2, 10, 25, 100, 1000
+Deciaml numbers - floating numbers: 2.5, 10.98, 3.14
+
+
+3. BigInt: used to store larger numbers (more than 8 bytes)
+
+
+= vs == vs ===
+=       assignment operator
+==      comparison operator (loose)
+===     comparison operator (strict)
+
+3 == 3    -> true
+3 =='3'   -> true (it checks the value only not the data type)
+3 === '3' -. false (it checks both the value and the data type)
+
+'5' === 'five' -> false
+'5' === '50'   -> false
+'5' === '5'    -> true
+
+
+
+Deprecation: deprecated
+var is a reserved keyword but it might got deprecated in tthe future as we use let and const.
+
+
+undefined vs null
+undefined is the default type when you decalre a variable but do not provide any value.
+null is specifically stating that this variable holds no vale. Absence of information.
+
+typeof undefined will returned undefined
+typeof null will return object
+
+let laptopModel;
+
+Object data type is used to store key-value pairs, properties
+firstName => 'John'
+lastName = 'Doe'
+age = 25
+phoneNumber = '000-000-0000'
+email => 'johndoe@gmail.com'
+password => 'john1234'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

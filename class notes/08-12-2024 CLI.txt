@@ -1,0 +1,66 @@
+
+
+
+CLI: Comman Line Interface
+GUI: Graphical User Interface
+
+PATH: an address of a file or folder 
+
+folder = directory
+
+HOME directory: C:\Users\17082
+Windows: C:\Users\{user} 
+
+Finder: macFile Explorer: windows
+
+1. show me acticve directory I am on now
+pwd: print working directory (for mac)
+cd: chagne for directory (for windows)
+
+2. create new folder
+mkdir folderNAme (for both mac and windows)
+mkdir = make directory
+
+3. Change directory to a child folder
+cd directoryName (for both mac and windows)
+cd = change directory
+
+4. change directory to parent (one step back)
+cd.. (for mac and windows)
+
+5. Change directory to HOME
+cd %HOMEPATH% (for windows)
+cd ~ (for mac)
+
+6. Change directory to roor
+cd / (for mac and windwos)
+
+7.  List existing files and folders in the current directory
+ls for mac 
+dir for windows
+
+
+8. clear terminal or cmd
+clear (for mac)
+cls (for windows)
+
+9. Create a new folder name 
+mkdir folderName for mac and windows 
+
+10. Remove an existing foler 
+empty:
+    rmdir folderName  for both 
+    rd folderName for windows
+
+NonEmpty:
+    rm -rf folerName for mac
+    rmdir /s folderName for windows  - > asks once again are you sure
+    rmdie /s /q folderName for windows - > remove quietly
+
+11. create a new file
+Empty:
+    touch fileName (for mac)
+    echo. > fileName (for windows)
+
+non-empty with intial content:
+    echo "Hello" > myNotes.txt

@@ -1,0 +1,33 @@
+
+
+
+07-23-2024 JS Numbers
+
+Falsy vlaues:
+false
+0
+''
+null
+undefined
+NaN
+
+-Number Object is more complex than the primitive Number
+--It is built-in object.
+-It has its own properties and functions
+
+properties:
+MAX_VALUE
+MIN_VALUE
+MAX_SAFE_INTEGER
+MIN_SAFE_INTEGER
+POSITIVE_INFINITY
+NEGATIVE_INFINITY
+NaN
+EPSILON
+
+property: the object information (what it has)
+function: the object behaviors (what it does)
+
+
+property = state = field = instance variables
+function = method = behavior

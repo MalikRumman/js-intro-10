@@ -1,0 +1,391 @@
+
+
+
+What is JS, and what are it's key features?
+- JS is an interpreted programming language, used for web development
+- JS is supported by all modern web browsers, used on both client side and server side
+KEY FEATURES: lightweight, easy to learn, designed t oadd interactivity to web pages
+
+
+How is JS diff from other programming languages?
+- mainly used for web development, has loose typing system, dynamic runtime and closures.
+- JS manipulates web page elements, handle events and perform asynchronus operations
+
+
+Where is JS commonly used in web development?
+- used to create inetractice and dynamic elements on web pages
+- used for form validation, creating interactive menus, implementing sliders and handling user interactions
+
+
+What is ECMAScript?
+- standarized scripting language, which JS is based. defines the syntax, types and semantics of the language
+- JS most popular implementation of ECMAScript, newer versions of JS are reffered to by their corresponding ECMAScript edition
+
+
+Is JS compiled or Interpreted language?
+- Interpreted language, JS does not require a separate compilation step
+- JS code is executed line by line by the JS engine of the browser or runtime enviornment
+
+
+Is there any relation between Java and JS
+- Java and JS are entirely diff programming languages
+- Java is statically typed, object-oriented, used for server side development, and standalone applications
+- JS is dynamically typed, scripting language, used for web development, to add interactivity, and functionaility
+
+
+Differences between var, let, and const?
+- all used for varaible declaration
+var: used in all JS code from 1995 to 2015
+let and const: added to JS in 2015
+let: variables defined with let can be re-assigned/updateed with a new value
+const: used if you will not need to change your variable value, have final values which cannot be changed
+
+
+List and briefly describe the basic data types in JS
+- There are 7 primitives: String, Number, Bigint, Bolean, undefined, Null, symbol
+- There are also Reference-Object data types: arrays, objects, collections etc 
+- STRING: sequence of characters, like "John Doe", writeen with quotes, can use single or double quotes but mostly uses double quotes
+- NUMBERS: stores as decimal numbers (floating point), can be written with or without decimals
+- BIGINT: All JS numbers are stores in a 64-bit floating point format. Bigint is a new datatype (2020), used to store integer values that are too big
+- BOOLEAN: only have two values, true or false, used often with conditional statements
+- UNDEFINED: a variable without a value, has the value undefined.
+- ARRAY: used to store multiple data, written with square brackets[], seperated by commas, array indexes are zero-based
+- OBJECT: used to store complex data with key-value pairs, curly braces {}, wrtieen as name: value pairs, seperated by commas
+
+
+How can you check the typeOf a variable in JS?
+- the 'typeOf' to check the type of varaible
+
+
+What are the differences between == and ===?
+- ==: performs type coercion, different types to be equal, ex: 1 == "1" - true
+- ===: preforms strict equality comparison, both value and types to be the same ex: 1 === "1" - false
+
+
+How do you convert a string to a number in JS?
+- parseInt() or parseFloat() functions to convert strings to integers or floating-point numbers
+
+
+What are the differences between integers and floating-point numbers in JS?
+- Integers are whole numbers without fractions, floating-point numbers allow decimals fractions
+
+
+What is an undefined property?
+- in JS, undefined property, property that has not been assigned or does not exist in an object
+- accessing a property that is not defined, JS will return the value undefined
+
+
+What is a null value?
+- In JS, it's a special value that represents the intentional absence of any value
+- It's used explicitly to indicate that any variable or object has no value
+
+
+What is the difference between null and undefined?
+- main difference is their meaning
+- null represents the absence of an object of a value and is explicitly assigned
+- undefined is a default value given to var ot object that have not been initialized or do not exitst
+
+
+What are varaible declaration and assignment in JavaScript?
+- In JS, a varaible is a named container used to store data values
+- variables in JS are declared using var, let or const, followed by the variable name
+- Var was the traditional use to declare variables, but let and const were introduced in the newer versions of JS
+- varaibles can store various data types such as numbers, strings, booleans, objects, arrays and more 
+
+
+What isNaN?
+- isNaN is a JS function that checks a value if it is Not-a-Number
+- returns true of the given value is not a valid number otherwise returns true 
+
+
+What are the differences between undeclared and undefined varaibles?
+- undeclared varaible is a variable that has not been declared using the var, let or const keywords, trying to access this JS will give a referenceError
+- undefined variable is a variable that has been declared but theres no value assigned to it, trying to access this will return the value as undefined
+
+
+What are identifiers in JS and what are the rules to follow for identifiers?
+- in JS, identifiers are names used to indentify variables, functions, objects etc;
+- must follow certain rules
+    - can only start with a letter, underscorem or dollar sign 
+    - can include letters, digits, underscores, or dollar strings
+    - are case-sensitive, (myVariable and myvariable) are diff 
+- good practice to use meaningful names for indentifiers to improve code readability
+
+
+What is string concatenation and how do you concatenate two string in JS?
+- concatenation is forming a new string using the combination of multiple strings
+- uses the + operator, concat() method, or template literals
+
+
+What are the differences between string concatenation and interpolation?
+- concatenation involves putting multiple strings together
+- string interpolation, aka template literals, allows you to embed expresions or variables directly within a string 
+- In JS, you can use `` to create template literals, and you can insert variables or expressions using the ${} syntax
+- string interpolation, is the more modern approach for ocmbinign strings, especially when you need to include variables within the string
+- gives better readability, eliminates the need for string concatenation using the + operator
+- string interpolation is widely used in modern JS applications
+
+
+Can you explain the concept of escaping characters in strings?
+- escaping characters allows you to include characters within a string by using escape sequences 
+    - \n inserts a new line
+    - \t inserts a tab 
+    - \" inserts a double quote 
+    - \' inserts a single quote 
+    - \\ inserts backslash
+
+
+What are the truhy/falsy values in JS?
+- Falsy values:
+    - values that are considered 'false' when evaluated in a boolean context
+    examples of falsy values:
+    - the number 0
+    - empty string ("")
+    - null
+    - undefined 
+    - NaN 
+    - the boolean value false
+- Truthy values:
+    - values that are considered true when evaluated in a boolean context. In most programming languages values that are not considered "false" are treated as truthy.
+    examples:
+    - numbers other than 0
+    - non-empty strings
+    - objects and arrays, which are considered true even if they are empty
+    - functions
+    - the boolean value true 
+
+
+What is nullish coalescing operator (??)?
+- the (??) operator is used to provide a default value when a variable is null or undefined 
+- helpful for handling cases where you want to assign a default value only when the varaible is explicitly null or undefined, but not for other falsy values like 0, false or an empty string
+- the key diff between (||) operator is that ?? only falls back to the default value when the variable is null or undefined, not for other falsy values
+- ?? is particularly useful when delaing with optional properties in objects or when setting default values for function parameters
+
+
+What is the use/purpose of functions in JS?
+- functions ins JS are reusable blocks of code
+- they allow putting togehter a set of instructions executing them whenever needed
+- functions pormote code reusability and maintainability
+- helps break down complex tasks into smaller more managebale units 
+- can be used multiple times throughout the codebase, reducing duplication
+- functions accept parameters and return values, enabling dynamic and flexible code execution
+- JS functions enhance code readability, and enables efficient problem-solving.
+
+
+What are some string functions you mostly use in JS?
+- I could mention some methods listed below:
+- Extracting characters
+    - charAt() - returns the character at the specified inedex in a string
+    - charCodeAt() - returns the unicode of the character at a specified index in a string 
+- Concatenating & interpolating 
+    - concat() - concatenate multiple strings into a new string 
+- Extracting strings 
+    - split() - split a string into an array of substrings
+    - substring() - extracts a substring from a string 
+    - slice() - extracts a part of the string 
+- Searching 
+    - search() - searches a string for a string (or a regular expression) and returns the position of the match
+    - indexOf() - gets the index of the first occurence of a substring in a string 
+    - lastIndexOf() - find the index of the last occurence of a substring in a string
+    - includes() - check if a string contains a substring 
+    - startsWith() - checks if a string starts with another string 
+    - endsWith() - determines if a string ends with another string 
+    - match() - returns an array containing the results of matching a string against a string (or a regular expression)
+    - matchAll() - returns an iterator of reuslts after mathcing a string against a regular expression
+- Trimming
+    - trim() - remove whitespace charas from a string 
+    - trimStart() - removes the leading whitespace characters of a string 
+    - trimEnd() - removes the ending whitespace characters of a string 
+- Replacing 
+    - replace() - replace a substring in a string with a new one 
+    - replaceAll() - replace all occurences of a substring that matches a pattern with a new one 
+- Changing cases 
+    - toUpperCase() - returns a string with all characters converted to uppercase 
+    - toLowerCase() - returns a string with all characters converted to lowercase
+- Padding 
+    - padStart() & padEnd() - pad a string with another string until the reuslt string reaches the given length 
+
+
+Wha are some number functions you mostly use in JS?
+- some methods I could mention
+- Converting numbers to other data types
+    - toString() - returns a number as a string 
+    - toFixed() - returns a number written with a number of decimals 
+    - toPrecision() - returns a number written with a specified length 
+- Converting varaibles to numbers 
+    - Number() - returns a number converted from its argument 
+    - parseFloat() - parses its argument and returns a floating number 
+    - parseInt() - parses its argument and returns a whole number 
+- Number object functions 
+    - Number.isInteger() - returns true if the argument is an integer 
+    - Number.isSafeInteger() - returns true if the argument is a safe integer 
+    - Number.parseFloat() - converts a string to a number 
+    - Number.parseInt() - converts a string to a whole number 
+
+
+What are if-else statements in JS and what are they used for?
+- JS if-else statements are used to test specific coniditions and control the flow of the program based on those conditions 
+- Executes a block of code if a given condition is true, and another block of code if the condition is false 
+
+
+What is the ternary operator in JS?
+- in JS it is a short-hand if-else expression that can be used instead of simple if-else statements 
+- helps to reduce multiple lines of code with a single line 
+- syntax: variable = (condition) ? expresionTrue : expressionFalse;
+
+
+What is the switch Statement in JS?
+- the switch statement in JS is used to select one of many code blocks to be executed based on the value of an expression 
+- can be used with number, string and enum data types in JS 
+- JS allows any number of cases within a switch statement 
+    How it works?
+    - switch expression is evaluated once 
+    - the value of the expression is comapred with the values of each case 
+    - if there is a match, the associated block of code is executed
+    - the break keyword is optional and used to break the switch statement after a case is matches.
+    - the default keyword is also optional and usually used at the end of the switch statement, it is executed if none of the cases match 
+    - no break is needed in the defualt case 
+
+
+What is the break Statement in JS?
+- the break statement in JS is used for termination 
+- it is commonly used with switch statements and loops (for, while, do-while) to exit the current block of code or loop iteration 
+
+
+question 1:
+What is JavaScript, and what are its key features?
+
+
+Answer:
+- JS is an interpreted programming language, used for web development
+- JS is supported by all modern web browsers, used on both client side and server side
+KEY FEATURES: lightweight, easy to learn, designed t oadd interactivity to web pages
+
+
+question 2:
+What are the differences between var, let, and const?
+
+
+Answer:
+- all used for varaible declaration
+var: used in all JS code from 1995 to 2015
+let and const: added to JS in 2015
+let: variables defined with let can be re-assigned/updateed with a new value
+const: used if you will not need to change your variable value, have final values which cannot be changed
+
+
+question 3:
+List and briefly describe the basic data types in JavaScript.
+
+
+Answer:
+- There are 7 primitives: String, Number, Bigint, Bolean, undefined, Null, symbol
+- There are also Reference-Object data types: arrays, objects, collections etc 
+- STRING: sequence of characters, like "John Doe", writeen with quotes, can use single or double quotes but mostly uses double quotes
+- NUMBERS: stores as decimal numbers (floating point), can be written with or without decimals
+- BIGINT: All JS numbers are stores in a 64-bit floating point format. Bigint is a new datatype (2020), used to store integer values that are too big
+- BOOLEAN: only have two values, true or false, used often with conditional statements
+- UNDEFINED: a variable without a value, has the value undefined.
+- ARRAY: used to store multiple data, written with square brackets[], seperated by commas, array indexes are zero-based
+- OBJECT: used to store complex data with key-value pairs, curly braces {}, wrtieen as name: value pairs, seperated by commas
+
+
+question 4: 
+What is an undefined property?
+
+
+Answer:
+- in JS, undefined property, property that has not been assigned or does not exist in an object
+- accessing a property that is not defined, JS will return the value undefined
+
+
+question 5:
+What is String concatenation and how do you concatenate two strings in JavaScript?
+
+
+Answer:
+- concatenation is forming a new string using the combination of multiple strings
+- uses the + operator, concat() method, or template literals
+
+
+question 6:
+What is the switch statement in JavaScript?
+
+
+Answer:
+- the switch statement in JS is used to select one of many code blocks to be executed based on the value of an expression 
+- can be used with number, string and enum data types in JS 
+- JS allows any number of cases within a switch statement 
+    How it works?
+    - switch expression is evaluated once 
+    - the value of the expression is comapred with the values of each case 
+    - if there is a match, the associated block of code is executed
+    - the break keyword is optional and used to break the switch statement after a case is matches.
+    - the default keyword is also optional and usually used at the end of the switch statement, it is executed if none of the cases match 
+    - no break is needed in the defualt case 
+
+
+
+question 7:
+How will the following expression be evaluated?
+Please provide a detailed explanation of the result.
+
+(10 / 2 === 5 || "hello" + "world" === "helloworld") && (5 === "5" || true) // 10 divided by 2 = 5, and 5 === 5, hello + world === helloworld, so the first part equals true, as for tje second part 5 does not === "5" wihch makes the || true, true, so true && true equals true
+
+question 8:
+Write a program that generates a random number between 1 and 50 (both inclusive).
+If the random number is divisible by 5, print true.
+Otherwise, print false.
+
+Examples:
+1 	-> false
+5 	-> true
+20 	-> true
+37 	-> false
+50 	-> true
+
+let r1 = Math.floor(Math.random() * 50) + 1;
+
+if(r1 % 5 === 0) console.log('true');
+else console.log('false');
+
+question 9:
+Write a program that generates 3 random numbers between 1 and 10 (both inclusive).
+Calculate the greatest and the smallest numbers and print their absolute difference.
+
+Examples:
+3, 5, 2		-> 3
+7, 3, 1		-> 6
+5, 5, 5		-> 0
+1, 10, 9	-> 9
+10, 1, 2	-> 9
+
+let ran1 = Math.floor(Math.random() * 10) + 1;
+let ran2 = Math.floor(Math.random() * 10) + 1;
+let ran3 = Math.floor(Math.random() * 10) + 1;
+
+let max = Math.max(ran1, ran2, ran3);
+let min = Math.min(ran1, ran2, ran3);
+
+let diff = max - min;
+
+console.log(`${ran1}, ${ran2}, ${ran3} = ${diff}`);
+
+question 10:
+Write a function named as concat() which takes two string words as arguments and returns the words concatenated when invoked.
+NOTE: Concatenation should always be as first string + second string.
+
+Examples:
+concat("Tech", "Global")	-> "TechGlobal"
+concat("Hello", "World")	-> "HelloWorld"
+concat("", "abc")			-> "abc"
+concat("123", "1234")		-> "1231234"
+
+function concat(string1, string2) {
+    return string1 + string2
+}
+
+console.log(concat("Tech", "Global")); 
+console.log(concat("Hello", "World")); 
+console.log(concat("", "abc")); 
+console.log(concat("123", "1234")); 

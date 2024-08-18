@@ -1,0 +1,30 @@
+let fname = 'John';
+let lname = "Doe";
+
+let fullname1 = fname + ' ' + lname; // traditional concatenation with + oeprator
+let fullname2 = `${fname} ${lname}`; // concatenation using backticks (string temples - template literals) after ES6
+let fullname3 = fname.concat(' ').concat(lname); // concatenation using concat() function 
+
+fname.concat(' '.concat(lname)); // this is another way to use concat() function 
+
+
+console.log(fullname1); // 'John Doe'
+console.log(fullname1); // 'John Doe'
+console.log(fullname3); // 'JohnDoe'
+
+
+console.log(fname);
+console.log(lname); 
+
+
+
+/*
+concat() function
+TASK: combines 2 strings together
+RETURN: returns a new string
+ARGUMENTS: takesa a string as an argument-parameter
+CHANGE ORIGINAL VALUE: does not modify the original value
+STATIC or NON-STATIC: non-static
+*/
+
+console.log('Hello'.concat(', ', 'Batch-10')); // 'Hello ,Batch-10' 

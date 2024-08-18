@@ -1,0 +1,92 @@
+
+
+
+08-05-2024 JS if-else part 3
+
+
+RECAP:
+
+if-else: control flow or conditional statements
+it works with a condition nad off of the conition, there will be different blocks of codes to be executed 
+
+if(condition) {
+    // block
+}
+else {
+    // block 
+}
+
+condition ? expressio1 : expression2
+
+let price = 0
+let color = 'White'
+
+if(color !== 'white') {
+    price = += 30
+}
+
+
+let day = 'Monday';
+
+if(day) === ('Monday') {
+    console.log('Go to work');
+}
+else if(day === 'Sunday') {
+    console.log('Go to concert');
+}
+
+
+// finding if a number is EVEN or ODD without a function
+let num = Math.floor(Math.random() * 10); // 2
+
+if(num % 2 === 0) {
+    console.log('EVEN');
+}
+else {
+    console.log('ODD');
+}
+
+OUTPUT:
+EVEN
+
+
+// finding if a number is EVEN or ODD with a function
+
+function evenOdd(num) {
+    if(num % 2 === 0) {
+        return 'EVEN';
+    }
+    else {
+        return 'ODD';
+    }
+}
+
+console.log(evenOdd(2));
+console.log(evenOdd(5));
+console.log(evenOdd(7));
+
+
+OUPUT:
+EVEN
+ODD 
+
+
+When to use else or just skip it?
+Why we don't need to write else in a function?
+
+function doSmth() {
+    if(true) {
+        return 1;
+        console.log('Hello World'); // unreachable code
+    }
+    else if () {
+        return 2;
+    }
+
+    console.log(3); 
+
+    return 5; // unreachable code
+    return 6; // unreachable code
+    return 7; // unreachable code
+}
+
