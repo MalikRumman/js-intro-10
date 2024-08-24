@@ -1,0 +1,75 @@
+
+
+
+08-19-2024 JS Array Methods
+
+
+
+sort() Methods
+TASK: sorts the array elements alphabetically (lexicographically)
+RETURN: returns the same array modified (sorted)
+ARGUMENTS: No args when sorting strings but we can take a callback function as an argument for nubmers
+CHANGE ORIGINAL VALUE: YES
+STATIC or NON-STATIC: NON-STATIC
+
+
+
+[ 1, 40, 2, 3, 10, 4, 100 ]
+
+a       b       a - b       memory
+1       40      1 - 40      1 should be less than 40 (if result is negative)
+40      2       40 - 2      40 sould be more than 2
+
+
+array.sort((a, b) => a - b); // ascending 
+array.sort((a, b) => b - a); // descending  
+
+
+Ascendind order: smallest to biggest
+Descending order: biggest to smallest 
+
+
+Callback function: it is a function passed as an argument to another function -> (a, b) => a - b
+Higher order function: it is a function that takes another function as an argument -> sort()
+
+function func1() {
+
+}
+
+function func2() {
+    
+}
+
+
+func1(func2); // func1 is higher order function while func2 is callback function 
+
+
+flat() Method
+TASK: flattens the sub arrays in the outer arays 
+RETURN: returns a new array 
+ARGUMENTS: No arguments but you may pass depth argument to extracts nested arrays 
+CHANGE ORIGINAL VALUE: NO 
+STATIC or NON-STATIC: NON-STATIC
+
+
+toString() Method
+TASK: converts array to a string with comma (,) separator
+RETURN: returns a string
+ARGUMENTS: No args
+CHANGE ORIGINAL VALUE: NO 
+STATIC or NON-STATIC: NON-STATIC
+
+
+join() Method
+TASK: converts array to a string 
+RETURN: returns a string 
+ARGUMENTS: When there is no argm it separates with comma (,) like toString() Method
+    It can take a custom separator as an argument 
+CHANGE ORIGINAL VALUE: NO 
+STATIC or NON-STATIC: NON-STATIC
+
+
+
+
+
+

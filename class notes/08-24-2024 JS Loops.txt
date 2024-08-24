@@ -1,0 +1,62 @@
+
+
+
+08-24-2024 JS Loops
+
+Loops: they are used to run a block of code many times.
+
+for(let i = 10; i < 20; i++){
+    // block of code 
+    console.log(i);
+}
+
+
+1. FOR LOOP:
+initialization
+condition 
+update - change 
+
+
+INFINITE LOOP:a loop never terminates 
+for(let i = 10; i > 1; i++) {
+    console.log(i);
+}
+
+for( ; ; ) {
+    console.log('Hello');
+}
+
+
+
+2. While Loop 
+
+1     6
+4     2 
+9     8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

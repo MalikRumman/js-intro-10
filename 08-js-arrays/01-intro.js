@@ -52,3 +52,7 @@ mix[1].slice(0, 2); // 'Go'
 mix[0].toFixed(0); // 10.5
 
 const numbers = [ 5, 10, 15, 7 ];
+
+numbers[10]; // undefined
+numbers[-1]; // undefined
+numbers[4]; // undefined
