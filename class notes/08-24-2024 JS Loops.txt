@@ -28,23 +28,71 @@ for( ; ; ) {
 
 
 
-2. While Loop 
+2. WHLE LOOP 
+
+while(condition) {
+    // block of of code to execute 
+}
+
+
 
 1     6
 4     2 
 9     8
 
 
+let written = 1;
+let guess = undefined 
 
 
+while(guess !== written) {
+    guess = getRandomNumber(1, 10); // 4, 7, 1
+}
+
+console.log('Numbers finally matched!');
 
 
+for loop    -> 50-60 percent of the time (fixed iteration)
+for...of loop -> 30-40 percent of the time (arrays)
+while loop -> 5-10 percent of the time 
+do...while and for...in loop -> 1-2 percent of the time 
+
+for loop        vs        while loop 
+DO I know how many times this loops exactly run?
+
+       YES              NO 
+    for loop        while loop 
+
+3. DO WHILE LOOP 
 
 
+let i = 5;
+
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+
+OUTPUT:
+5
+6
+7
+8
+9
 
 
+do {
+    console.log(i);
+    i++; 
+}
+while(i < 10);
 
-
+OUTPUT:
+5
+6
+7
+8
+9
 
 
 

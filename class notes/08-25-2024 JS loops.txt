@@ -1,0 +1,81 @@
+
+
+
+08-25-2024 JS Loops 
+
+
+1. For Loops
+for(initialization; condition; update) {
+    // block
+}
+
+
+
+2. while Loops
+
+while(condition) {
+    // block 
+}
+
+
+3. do...while loop 
+
+do {
+    // block 
+} while(condition);
+
+CONTROL STATEMENTS
+break: used to terminate the loop 
+continue: used to skip the current iteration
+
+NESTED LOOPS 
+Any lop used in another loop creates a nested loop/ 
+In this case, for every iteration of outer loop, a full cycle of inner loop will be executed 
+
+4. for...of loop 
+Mostly used with iterablee objects like array 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
