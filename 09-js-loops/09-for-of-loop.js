@@ -18,8 +18,24 @@ for(const city of cities) {
     console.log(city);
 }
 
+// log the numbers elements using for...of and for loop 
 
+const numbers = [ 10, 20, 30, 40, 23 ];
 
+for(const num of numbers) {
+    console.log(num);
+}
+
+for(let i = 0; i <= numbers.length - 1; i++) {
+    console.log(numbers[i]);
+}
+
+let j = 0; 
+
+while(index <= numbers.length - 1) {
+    console.log(numbers[j]);
+    j++;
+}
 
 
 
