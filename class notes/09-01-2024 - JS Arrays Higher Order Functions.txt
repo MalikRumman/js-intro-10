@@ -1,0 +1,19 @@
+
+
+
+09-01-2024 - JS Arrays Higher Order Functions
+
+
+
+
+
+
+
+
+
+call, applu, bind methods are used to borrow anotehr function and execute it for an object by definning this keyword.
+
+call: takes individual arguments and executes the borrowed function 
+applY: take an array of arguments and executes the borrowed function
+bind: takes individual arguemtns and returns a new function to be invoked
+
