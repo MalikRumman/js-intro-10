@@ -1,0 +1,68 @@
+
+
+
+
+
+Mutable: changing 
+Immutable: not changing
+
+Array and object are mutable data types, and some of their methods can change their values 
+
+const arr = [ 1, 2, 3 ];
+
+arr.push(4); // [ 1, 2, 3, 4 ]
+
+reverse()
+
+const persion = {
+    fname: 'John'
+    lname: 'Doe'
+};
+
+person.age = 25; // { fname: 'John', lname: 'Doe', age: 25 }
+
+
+const numbers = [ 10, 20, 30 ];
+
+mutable array methods: reverse(), push(), pop(), shift(), unshift(), splice(), sort()
+
+Immutable array methods: indexOf(), lastIndexOF(), includes(), isArray(), slice(), concat(), 
+map(), filter(), reduce(), forEach(), find(), findLast(), findLastIndex(), some(), every()
+at(), flat(), toString(), join()
+
+PRIMITIVES:
+string, number, boolean, null, undefinedm bigint, symbol
+
+NOTE: All the primitives are immutable by their nature. 
+
+let name = 'John';
+
+name = 'James';
+
+console.log(name); // 'James'
+
+
+
+JSON - JavaScript Object Notation
+
+DATA TYPES SUPPORTED BY JSON 
+Strings: "Hello, World!"
+Numbers: 42 or 3.14
+Booelans: true or false 
+Arrays: ["apple", "banana", "orange']
+
+Not supported: undefined, symbol, functions, reference types except the arrays and objects 
+
+What is mutability? 
+What is JSON and its operations?
+Explain what are the differences between deep and shallow copy?
+
+
+
+
+
+
+
+
+
+
