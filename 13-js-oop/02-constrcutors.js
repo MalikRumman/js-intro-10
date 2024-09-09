@@ -1,0 +1,67 @@
+// TASK: create a teacger prototype with fname, lname, age, field properties
+
+// BEFORE ES6 - JS Prototypes
+// constructor: it is a special method/function used to create objects of the prototype/class 
+/*
+function Teacher(fname, lname, age, field) {
+    this.fname = fname;
+    this.lname = lname;
+    this.age = age;
+    this.field = field;
+}
+
+// Create 2 Teacher prototype methods as teach and giveHomework
+Teacher.prototype.teach = function () {
+    console.log(`${this.fname} teaches ${this.field}!`);
+}
+
+Teacher.prototype.giveHomework = function () {
+    console.log(`${this.fname} gives homework!`);
+}
+
+
+// Create 3 Teacher objects
+const teacher1 = new Teacher('Akin', 'Kaya', 25, 'JavaScript');
+const teacher2 = new Teacher('Alex', 'Morgan', 46, 'Math');
+const teacher3 = new Teacher('John', 'Doe', 46, 'Cypress');
+const teacher4 = new Teacher('Mariia', 'x', 20, 'science');
+*/
+
+// ES6 Classes
+class Teacher {
+    constructor(fname, lname, age, field) {
+        this.fname = fname;
+        this.lname = lname;
+        this.age = age;
+        this.field = field;
+    }
+
+    teach() {
+        console.log(`${this.fname} teaches ${this.field}!`);
+    }
+
+    giveHomework() {
+        console.log(`${this.fname} gives homework!`);
+    }
+}
+
+const teacher1 = new Teacher('Akin', 'Kaya', 25, 'JavaScript');
+const teacher2 = new Teacher('Alex', 'Morgan', 47, 'Math');
+const teacher3 = new Teacher('John', 'Doe', 45, 'Cypress');
+const teacher4 = new Teacher('Mariia', 'x', 20, ['science', 'Math']);
+
+
+teacher1.teach(); // 'Akin teacges JavaScript!'
+teacher4.giveHomework(); // 'Mariia gives homework!'
+
+
+// Store all the ages in an array -> [ 25, 47, 45, 20 ]
+// Store all the first names in an array -> [ 'Akin', 'Alex', 'John', 'Mariia' ]
+// Find and print the information of the oldest teacher -> Teacher('Alex', 'Morgan', 47, 'Math');
+
+const teachers = [ teacher1, teacher2, teacher3, teacher4 ];
+
+const ages = [];
+
+
+console.log(ages);
