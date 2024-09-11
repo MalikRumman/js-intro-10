@@ -1,14 +1,54 @@
 
 
 
+09-09-2024 Prototypes and Classes
+
+constructor: is a special kind of method used to create objects from rototypes or classes
+-An ES6 class can have only ONE constructor
+-If we do not create a custom constrcutor, JS will provide us the default constrcutor
+
+
+class Animal {
+    constrcutor() {} // default constructor
+
+    makesNoise() {
+        console.log('Makes noise');
+    }
+}
+
+const a1 = new Aniaml();
+a1.makesNoise();
 
 
 
+class Date{
+    constrcutor() {}
+
+}
+
+const date = new Date();
+
+Class members: properties, constrcutors, functions 
+
+INHERITANCE: it is a common concept used in all the programming languages 
+It increases code resuability by child classes from parent classes
+properties, function and constrcutors of the parent classes can be inherited
+Private properties and functions in parent classes cannot be inherited 
+Parent cannot inherit from child 
+One child class can have ONLY one parent
+One parent class can have multiple child classes 
 
 
+class A extends B {
 
+}
 
+class C extends A {
+    
+}
 
+A is the child class 
+B is the parent class 
 
 
 
