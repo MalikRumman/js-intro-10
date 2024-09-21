@@ -84,5 +84,24 @@ class AppleStore {
 
     }
 
-    
+
 }
+
+HTML - HyperText Markup Language
+It is not a programming Language because you cannot create functions with it.
+
+
+Web Application: Any app you vist on browsers
+Mobile Application: Any app you download from AppStore or GooglePlay
+Hybrid Application: you can onwe b and also install on your mobile devices
+
+Desktop Application: Robot Framework (Python)
+
+Web Application: is consist of many web pages 
+Each web page is created using HTML 
+Each web page is created using web elements 
+
+Each web element is represented by an HTML tag 
+<p></p<
+<img/>
+<div></div>
