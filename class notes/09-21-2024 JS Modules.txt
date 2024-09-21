@@ -1,0 +1,88 @@
+
+
+
+09-21-2024 JS Modules
+
+1. Common JS Modules 
+module.exports and require()
+
+2. ES6 Modules 
+export and import
+
+
+HOW TO RUN JS CODE/
+-NodeJS
+-Browser
+-EXtensions (you'll never use this in the work environment)
+
+
+static methods and properties can be accessed with the className while non-static 
+can be accessed with an object the class
+
+class Apple {
+    static propertyA = 'Hi';
+    propertyB = 'Hello';
+
+    static funcA() {
+        console.log('I am static');
+    }
+
+    funcB() {
+        console.log('I am not static');
+    }
+}
+
+// Accessing static properties and methods 
+Apple.propertyA; // 'Hi'
+Apple.funcA(); // I am static
+
+const a1 = new Apple();
+
+a1.funcB(); // I am not static 
+a1.propertyB(); 
+
+
+
+
+If the method executes the same task for every single object 
+of the class, it makes sense use static method.
+
+
+class Batch10Student {
+    constructor(fullname, age) [
+        this.fullname = fullname;
+        this.age = age;
+    ]
+    static getProgramName() {
+        return 'SDET';
+    }
+
+    getFullName() {
+        return this.getFullName();
+    }
+
+    getAge() {
+        return this.age;
+    }
+}
+
+const bermet = new Batch10Student('Bermet S', 20);
+const bermet = new Batch10Student('Alina', 21);
+
+bermet.getFullName();
+
+
+Batch10Student.getProgramName();
+
+
+class AppleStore {
+    constructor(id, city, state, zip) {
+
+    }
+
+    static getIphone16ProMaxPrice() {
+
+    }
+
+    
+}
