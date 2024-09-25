@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const username = prompt('Please enter your name: ');
+
+        if (username) {
+            alert('Welcome, ' + username + '!');
+
+            const userConfirm = confirm('Do you want to continue?');
+            if (userConfirm) {
+                alert('You chose to continue');
+            } else {
+                alert('You canceled');
+            }
+
+            console.log('Scereen Width: ' + window.innerWidth);
+            console.log('Scereen Height: ' + window.innerHeight);
+            console.log('The page will reload in 10 seconds');
+
+            setTimeout(function() {
+                window.location.reload();
+            }, 10000);
+
+        } else {
+            console.error("You did not provide your name. Bye Bye!");
+        }
+    </script>
+</body>
+</html>
