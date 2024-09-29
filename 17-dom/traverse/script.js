@@ -43,6 +43,8 @@ console.log('Parent Element of parent div', parentEl.parentElement); // body
 console.log('Cildren of parent div', parentEl.children); // 
 
 // firstElementChild, lastElementChild
-console.log('First Element Child', parentEl.firstElementChild); // text
-console.log('Last Element Child', parentEl.lastElementChild); // text
+console.log('First Element Child', parentEl.firstElementChild); // child 1 
+console.log('Last Element Child', parentEl.lastElementChild); //  child 3
 
+console.log('Child 2', child1El.nextElementSibling); // child 2
+console.log('Child 2', child3El.previousElementSibling); // child 2
