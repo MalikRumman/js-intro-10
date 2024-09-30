@@ -1,0 +1,136 @@
+
+
+
+09-29-2024 JS Errors - Functions - Unit Test
+
+Functions:
+it is blokc of code canbe executed repeatedly and increases the code
+resuability
+-it awalys runs a task
+-There are 2 types of functions
+    void: does not return any value and just runs the task 
+    return: returns a value (data) when invoked
+-Functions can be static 
+    static: can be invoked with its className or prototype 
+    Math.min()
+    non-static: can be invoked with an instance (object) of the template
+
+How many different ways you can create a function 
+1. function declaration
+function smth() {
+    // body
+}
+
+2. Function expression
+const smth = function () {
+    // body
+}
+
+3. Arrow function 
+const smth = () => {
+    // body
+}
+
+4. Constrcutor function: special type of function used to create prototypess
+function prototypeName(arg1, arg2) {
+    this.arg1 = arg1;
+    this.arg2 = arg2;
+}
+
+5. IIFE - Immediately Invoked Function Expression 
+(function () {
+    // body
+})();
+
+6. Object Property Function
+const obj - {
+    smth: function () {
+        // body 
+    }
+}
+
+
+Callback vs Higher Order Function 
+function funcA(funcArg) {
+    // body
+}
+
+function funcB() {
+    // body
+}
+
+funcA(funcB);
+
+funcA -> Higher ORder 
+funcB -> Callback
+
+
+7. RECURSIVE FUNCITON 
+Recursion: it is a method invoking itself
+
+function printHello() {
+    console.log('Hello');
+    printHello();
+}
+
+printHello()
+
+
+JS ERRORS :
+
+Syntax Errors (Compiler Errors): 
+  -These are cuased by programmer
+  -We see these right away underlined even before running the program 
+
+Runtime Errors: 
+  -These are logical mistakes you have in your code 
+  -We see them afer executing our program 
+
+Reference Errors: we got this when we tried to access a varaible which is not delcared or not accessible (scope)
+TypeError: Assignment to constant variable (const).
+StackOverFlowError: we got this as a result of bad recursion. 
+
+
+ERROR HANDLING
+try: this is the block you have your code to be executed and potentially throw an error (may or may not throw)
+catch: is executed when there is an error thrown in the try block. It will be ignored when there is not error.
+finally: it will run wheter there is an error or not 
+
+RULES:
+-try block cannot be used alone!
+-try can be used with catch or finally or both!
+-In case you use both catch and finally with your try block, then the other should be try-catch-finally
+-catch or finally cannot be used without try block 
+
+
+What type of erros do you face in JS?
+How do you handle errors in JS?
+try catch and sometimes finally blocks 
+
+
+What is testing pyramid?
+Unit Testing: Developer test their own units - a simple component 
+Integration Testing: Developers/Testers test if multiple components work fine together
+E2E - End to end testing: User flow 
+
+
+UNIT TESTING 
+-We don't usually involve in Dev repo. So, we do not conduct Unit Testing.
+
+
+STEPS TO CREATE A TESTING FRAMEWORK
+-Create a new project: unit-testing
+-Initialize this project as a Node Project
+    npm init -y 
+
+
+
+SOME UNIT TESTING TOOLS
+JS: JEstm Jasmine, Chai, Mocha, Sinon
+JAVA: TestNGm JUnit
+C#: NUint, MSTest, XUnit
+Pythin: Pytest
+
+Framework vs Librasry/Dependency/Module
+Framework: is the set of tools/programming languages, design patterns. dependencies and more 
+used together for developing or testing purposes. 
