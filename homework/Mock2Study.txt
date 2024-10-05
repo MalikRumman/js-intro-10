@@ -1,0 +1,251 @@
+----------CLI-GIT-VCS----------
+
+What are Linux commands and can you give some examples that you use?
+- Linux commands are instructions that you can give to a computer running the Linux operating system
+- They allows us to perform various tasks, like managing files, folders, and programs
+Some exmaples:
+    - pwd: use this command to check which directory you're working on.
+    - cd: use this command to open the specified directory-navigate to the specfied directory
+    - cd..: use this command to mogve up to the parent directory-navigate to the parent directory 
+    - cd/: use this command to move up to the starting directory-root directory
+    - cd ~: use this command to move to the home directory 
+    - clear: use this command to clear working terminal or command prompt
+    - mkdir: use this command to create a new directory 
+    - rmdir: use this command to remove and existing empty directory
+    - touch: use this command to create a new file 
+    - echo content > fileName: use this command to create a new file with an intial text. 
+
+What is GIT vs VCS?
+- GIT (Global Information Tracker) is the name of the version control sytem (VCS)
+- GIT is a software for tracking changes in any set of filesm and usually for coordinating work among programmers to collaboratively develop the source code.
+- Version Control System Types: 
+    1. Centralized: one central server and mnay users
+    2. Distributed: local repositories added for each user 
+
+Centralized Version Control System:
+- There is a central server that stores the entire history of the projectm inclduing all the files and their versions
+- Developers check out a copy of the project from the central server to work on it 
+- Common examples include CVS (Concurrent Versions System) and Subversion (SVN)
+Advantages: 
+- Centralized control and management 
+- Easy access control and permissions 
+- Users can work offline but commits require network access
+Disadvantages:
+- Single point of failure (if the central server goes down, work is disputed)
+- Slower performance for certain operations 
+- Limited branching and merging capabilities 
+
+Distributed Version Control System
+- Each developer has a complete copy of the project, including the entire history, on their local machine 
+- Developers can work independently and commit changes to their local copy without needing constant network access
+- Changes can be synchronized and merged with other Developers' copies when needed 
+- Common examples include Git, Mercurialm and Bazaar
+Advantages:
+- No single point of failure (no central server dependecy)
+- Gaster performance, especially for common operations 
+- String branching and merging capabilities 
+- offline work is seamless 
+Disadvantages:
+- Can be more complex to set up and manage, especially for large projects 
+
+What are the differences between GIT and hosting platforms like GitHub?
+- GIT is a software for tracking changes in any set of files and usually used for coordinating work among programmers to collaboratively develop the source code 
+- GIT is an open-source tool that allows 
+    - team members to collaborate 
+    - track and revert changes 
+- GitHub is a platform where developers store their projects as repositories and have additional features to help them collaborate to develop projects 
+- Similar hosting websites: GitLab, BitBucket 
+
+What is SSH Key? 
+    - An SSH key, is the context of services like GitHub, GitLab, and BitBucket, is a secure and convenient way to authenticate and establish a secure connection between your local development environment (your computer) and the remote repository hosted on one of these platforms 
+    - SSH kets are an alternative to using a username and password for authentication, and they offer several benefits 
+        - Security: SSH kets are more secure than passwords because they are cryptographically generated and provide a stronger level of protection against unauthorized access
+        - Convenience: Once set up, you dont need to enter your password each time you interact with a remote repository. It simplifies the authentication process 
+        - Automation: SSH keys are essential for automated proccess, such as continuous integration and deployment (CI/CD) pipelines, which require secure, passwordless authentication
+
+What is GIT branching? 
+    - Git branching is a fundamental concept in GIT, and itplays a cruical role in managing and organzing your codebase 
+    - It allows us to create a separate line of development, known as a branch, from the main codebase (often reffered to as the "master" or "main" branch)
+    - Each branch can have its own set of changes, features, or bug fixes, while the main branch remains stable 
+
+What are some GIT commands you use?
+    - git branch: list the existing branches 
+    - git branch <branch-name>: create a new branch with the specified name 
+    - git branch -m <new-branch-name>: rename the branch with the specified new name 
+    - git checkout -b <branch-name>: create and switch to the created branch
+    - git branch -d <branch-name>: delete the specified branch
+    - git merge <branch-name>: merge changes from the specified branch (first time push)
+    - git push: push changes from an existing branch (already pushed before at least once)
+    - git pull: fetch changes from the remote repository including the main/master branch 
+
+What is a Pull Request?
+    - A pull request - also referred to as a merge request - is known as a contributer/developer is ready to begin the process of merging new code changes with the main project repository
+    - It is basically after you are done with your changes on your own branch, you request your changes to be merged with main remote branch 
+    - Steps to create a Pull Request
+    - Do your changes in a repository with your own branch 
+    - Push your code to your remote branch 
+    - Go to hosting website 
+    - Create a pull request from your branch to main branch (add reviwers id requreed as a policy)
+    - After PR is created, your reviwer (if you add any) or yourself can merge the code to the main branch (master)
+
+What is merge conflict and how to resolve it? 
+    - This is a common issue when multiple people work on the same project 
+    - A merge conflict occurs when Git is unable to automatically merge two branches because they have competing changes 
+    - It occurs when multiple people make changes on the same file 
+    - We need to resolve this conflict before merging it to main branch (master)
+To Resolve a merge conflict, follow these steps: 
+    - Checkout the branch: first, make sure you are on the branch where the conflict needs to be resolved. You can do this using <git checkout branch-name>
+    - Pull the latest changes: Its a good practice to ensure your branh is up to date with the latest changes from the remote repository by runing git pull . 
+    - Locate and Open the conflict file: Git will indicate the conflicted files. Open the file(s) in a text editor 
+    - Review the conflict: Inside the file,  Git will mark the conflicting lines with special markers such as <<<<<<<, =======, and >>>>>>>. These markers separate the conflicting changes. Review the conflicting sections to understand what each contributor intended.
+    - Manually Resolve the Conflict: Edit the file to retain the changes you want to keep and remove the markers. This may involve combining, rewriting, or discarding code as needed.
+    - Save the File: After resolving the conflict, save the file. 
+    - Add and Commit the Changes: Use git add conflicted-file to stage the resolved file, and then commit the changes using git commit.
+Push the Changes: If you resolved the conflict while working on a branch with a corresponding 
+Pull Request, push the changes to the remote repository using git push. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
